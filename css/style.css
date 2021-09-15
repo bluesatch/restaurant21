@@ -115,7 +115,7 @@ ul {
 
 .logo {
     font-family: var(--workSans);
-    font-size: 36px;
+    font-size: 48px;
     font-weight: 700;
     text-transform: capitalize;
 }
@@ -150,7 +150,7 @@ ul {
 .slogan-text {
     color: var(--textColor);
     font-family: var(--workSans);
-    font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
     font-style: italic;
     font-weight: 100;
 }
@@ -165,7 +165,7 @@ ul {
 @media (min-width: 768px) {
     .slogan-text {
         margin: 0;
-        width: 48%;
+        width: 60%;
     }
 }
 
