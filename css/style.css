@@ -169,7 +169,7 @@ ul {
     }
 }
 
-form {
+.nav-form {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -180,7 +180,7 @@ form {
 
 
 @media (min-width: 768px) {
-    form {
+    .nav-form {
         display: inline-block;
         width: 40%;
         left: 60%;
@@ -281,13 +281,13 @@ input {
     background-color: var(--figureBg);
 }
 
-.figure {
+.landing-figure {
     width: 100%;
     background: #fff;
     box-shadow: 5px 5px 5px #ddd;
 }
 
-figure img {
+.landing-figure img {
     width: 100%;
 }
 
@@ -516,4 +516,106 @@ figure img {
 
 .about-text:last-child {
     padding-bottom: 30px;
+}
+
+/* menu/checkout*/
+
+.cart-btn {
+    background-color: var(--prim);
+    color: var(--sec);
+    float:right;
+}
+
+.menu-header, .checkout-header {
+    margin-bottom: 0;
+    color: var(--prim);
+    font-family: var(--workSans);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.menu-slogan {
+    margin: 0;
+    color: var(--textColor);
+    font-size: 14px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.entree-div {
+    margin: 80px 0;
+}
+
+.item-figure {
+    padding: 2px; 
+    /* border: 1px solid var(--prim); */
+}
+
+@media (min-width: 768px) {
+    .item-figure {
+        position: relative;
+        height: 300px;
+    }
+}
+
+.item-caption {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.item-price {
+    font-style: italic;
+}
+
+.item-img {
+    border-radius: 5px; 
+}
+
+.item-desc {
+    font-size: 12px;
+    font-style: italic;
+}
+
+@media (min-width: 768px) {
+    .menu-btn {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.menu-btn, .confirm-button {
+    background-color: var(--prim);
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.bar {
+    margin-bottom: 100px;
+    padding: 10px 0;
+    width: 100%;
+    background-color: var(--prim);
+    color: #fff;
+}
+
+.bar-text {
+    margin: 0;
+}
+
+.home-switch {
+    transition: color 0.5s ease;
+}
+
+.home-switch:hover {
+    color: var(--colophonBg);
+}
+
+.checkout-section {
+    margin-bottom: 100px;
+}
+.table-headers td {
+    color: var(--clientBg);
+    text-transform: uppercase;
 }
