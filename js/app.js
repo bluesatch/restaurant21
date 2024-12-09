@@ -1,6 +1,7 @@
 class Store {
     constructor() {
 
+        // tracks how many items are in the cart and the subtotal of the items
         this.itemsInCart = {
             itemCount: 0,
             subtotal: 0
@@ -198,7 +199,7 @@ class Store {
 
             if (menuSection.classList.contains('d-none')) return 
             checkoutPage.classList.remove('d-none'); 
-            menuSection.classList.add('d-none')        
+            menuSection.classList.add('d-none');        
 
             for (const key in this.menu) {
                 const item = this.menu[key];
@@ -237,6 +238,9 @@ class Store {
 
             menuSection.classList.remove('d-none');
             checkoutPage.classList.add('d-none');
+
+            let table = document.getElementById('tbody');
+            table.innerHTML = '';
         })
 
     }
